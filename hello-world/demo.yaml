@@ -11,7 +11,7 @@ spec:
             - setBody:
                 expression:
                   groovy:
-                    expression: '[status: 200, body: ''abcdef'']'
+                    expression: '[status: 200, body: ''Hello Groovy World'']'
             - marshal:
                 json:
                   library: jackson
@@ -19,5 +19,5 @@ spec:
                 message: ${body}
           parameters:
             period: 66666
-            message: Hello World Demo
+            message: Hello World
         id: routeX
